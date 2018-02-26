@@ -4,38 +4,54 @@
 <head>
   <link rel="stylesheet" href="css/style.css">
   <script>
-    var a = "1a";
-    var b = "1b";
-    var c = "1c";
+    var a, b, c;
+    a = b = c = 1;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log("--------------------");
+    a = "1a";
+    b = "1b";
+    c = "1c";
     console.log(a);
     console.log(b);
     console.log(c);
     console.log("--------------------");
 
     var d;
+    console.log(typeof(d));
+    console.log("--------------------");
     d = true;
+    console.log(typeof(d));
+    console.log("--------------------");
     d = 2;
+    console.log(typeof(d));
+    console.log("--------------------");
     d = "d3";
+    console.log(typeof(d));
+    console.log("--------------------");
     d = null;
     console.log(typeof(d));
     console.log("--------------------");
 
-    let js = "JavaScript";
+    var js = "JavaScript";
     var cs = "courses";
     var result = js + " " + cs;
     console.log(result);
     console.log("--------------------");
 
     var i = 1;
-    var value = i + 3;
+    var value = ++i;
+    value = ++i;
+    value = ++i;
     var z = x = value;
-    console.log("value= " + z);
+    console.log("value = " + z);
     console.log("--------------------");
 
     var num = 3;
     var result = num.toString();
     var result = num > 5;
-    var result = num++;
+    var result = +num;
     console.log(typeof result);
     console.log("--------------------");
   </script>
